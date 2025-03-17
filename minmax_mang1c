@@ -14,8 +14,12 @@ for i in range(0,n):
     if max<a[i]:
         max=a[i]
         vtmax=i+1 
-    else:
+for i in range(0,(n-1)):
+    if a[i]<a[i+1]:
         min=a[i]
+        vtmin=i+1
+    else:
+        min=a[i+1]
         vtmin=i+1
 print("")     
 print("max: ",max)
