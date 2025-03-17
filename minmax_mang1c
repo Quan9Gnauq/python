@@ -1,0 +1,25 @@
+n=int(input("nhap n:"))
+a=[]
+for i in range(0,n):
+    x= int(input("nhap phan tu thu a[%2d]:"%(i+1)))
+    a.append(x)
+print("day vua nhap: ")
+for i in range(0,n):
+    print(" {0}".format(a[i]),end=' ')
+max=0
+vtmax=0
+min=0
+vtmin=0
+for i in range(0,n):
+    if max<a[i]:
+        max=a[i]
+        vtmax=i+1 
+    else:
+        min=a[i]
+        vtmin=i+1
+print("")     
+print("max: ",max)
+print("vi tri max:",vtmax)
+print("min: ",min)
+print("vi tri min: ",vtmin)
+print("tong min max: ",min+max)
